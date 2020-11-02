@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import { getBagById } from "../../actions/bag";
-import ProfileTop from "./ProfileTable";
+import ProfileTable from "./ProfileTable";
 import ProfileImage from "./ProfileImage";
 import Image from "../image/Image";
 
@@ -19,15 +19,14 @@ const Profile = ({ getBagById, match, bag: { bag, loading }, auth }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <ProfileImage profile={bag}/>
-          {auth.isAuthenticated &&
-            auth.loading === false &&
-            auth.user._id === bag.user._id && (
-              <Image/>
-            )}
-          <div className='profile-grid my-1'>
-            <ProfileTop profile={bag} />
+          <div class='public-profile'>
+            <ProfileImage profile={bag} />
+            
+            <div>
+              <ProfileTable profile={bag} />
+            </div>
           </div>
+          <div className="public-profile-btns">
           <Link to='/bags' className='btn btn-light'>
             Back to Bags
           </Link>
@@ -36,6 +35,10 @@ const Profile = ({ getBagById, match, bag: { bag, loading }, auth }) => {
             auth.user._id === bag.user._id && (
               <Link to='/discbag'>Edit Bag</Link>
             )}
+            {auth.isAuthenticated &&
+              auth.loading === false &&
+              auth.user._id === bag.user._id && <Image />}
+            </div>
         </Fragment>
       )}
     </Fragment>

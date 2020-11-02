@@ -8,7 +8,6 @@ import { getBag } from "../../actions/bag";
 import EditDisc from './EditDisc';
 import DisplayEmptyBag from './DisplayEmptyBag';
 
-
 const DiscBag = ({
   getBag,
   auth: { user },
@@ -25,10 +24,10 @@ const DiscBag = ({
     <Fragment>
       <div className="discbag-container">
       {!editdisc ? (
-        <AddDisc className="discbag-addDisc"/>
-      ) : (<EditDisc className="discbag-addDisc"/>)}
+        <AddDisc />
+      ) : (<EditDisc />)}
 
-      {bag !== null ? <DisplayDiscs className="discbag-table"  discList={bag.disccollection} /> : <DisplayEmptyBag className="discbag-table" />}
+      {bag !== null ? <DisplayDiscs  discList={bag.disccollection} /> : <DisplayEmptyBag  />}
       </div>
     </Fragment>
   );

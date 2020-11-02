@@ -17,24 +17,24 @@ const ProfileTop = ({profile: {disccollection }}) => {
   ));
   
   return ( 
-    <Fragment>
-      <div className='disc-table'>
-        <table className='table'>
+    // <Fragment>
+      <div className='disc-table-div'>
+        <table className='disc-table'>
           <thead>
             <tr>
-              <th>Disc Name</th>
-              <th>Disc Manufacturer</th>
-              <th>Disc Type</th>
-              <th>Disc Speed</th>
-              <th>Disc Glide</th>
-              <th>Disc Turn</th>
-              <th>Disc Fade</th>
+              <th>Name</th>
+              <th>Manufacturer</th>
+              <th>Type</th>
+              <th>Speed</th>
+              <th>Glide</th>
+              <th>Turn</th>
+              <th>Fade</th>
             </tr>
           </thead>
           <tbody>{discs}</tbody>
         </table>
       </div>
-    </Fragment>
+    // </Fragment>
   
   )
 }

@@ -17,6 +17,7 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import Dashboard from './components/dashboard/Dashboard';
+// import DiscBagPublic from "./components/discbagPublic/DiscBag";
 
 
 
@@ -42,6 +43,7 @@ const App = () => {
           <Route exact path='/login' component={Login} />
           <Route exact path='/bags' component={Bags} />
           <Route exact path='/bag/:id' component={Profile} />
+          {/* <Route exact path="/discbagpublic" component={DiscBagPublic} /> */}
           <PrivateRoute exact path='/dashboard' component={ Dashboard }/>
           <PrivateRoute exact path='/create-profile' component={ CreateProfile }/>
           <PrivateRoute exact path='/edit-profile' component={ EditProfile }/>

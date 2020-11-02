@@ -48,7 +48,7 @@ const AddDisc = ({ addDisc }) => {
       <h1 className='large text-primary'>Add A Disc</h1>
       <small>* = required field</small>
       <div className='add-disc'>
-        <form className='form ' onSubmit={(e) => onSubmit(e)}>
+        <form className='form' onSubmit={(e) => onSubmit(e)}>
           <div className='form-group'>
             <input
               type='text'

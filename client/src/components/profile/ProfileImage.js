@@ -2,14 +2,14 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 
-const ProfileImage = ({profile: {imageURL, user: {name}}}) => {
+const ProfileImage = ({profile: {imageURL, nickname, user: {name}}}) => {
 
     
   return ( 
     <Fragment>
-      <div className='disc-table'>
-        <h2 className='my-2'>{name}'s Disc Golf Bag</h2>
-        {imageURL ? <img src={imageURL} alt="Disc Bag"/> : <p>Please upload an image.</p>}
+      <div className='profile-image-div'>
+        <h2>{nickname ? nickname : name}'s Disc Golf Bag</h2>
+        {imageURL ? <img src={imageURL} alt="Disc Bag" className="profile-image" /> : <p>Please upload an image.</p>}
       </div>
     </Fragment>
   
