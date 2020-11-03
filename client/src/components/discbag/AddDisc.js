@@ -44,7 +44,7 @@ const AddDisc = ({ addDisc }) => {
   };
 
   return (
-    <div>
+    <div className="add-disc-container">
       <h1 className='large text-primary'>Add A Disc</h1>
       <small>* = required field</small>
       <div className='add-disc'>

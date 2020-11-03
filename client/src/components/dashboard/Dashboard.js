@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import { deleteAccount } from "../../actions/bag";
 import { getBag } from "../../actions/bag";
-import Image from "../image/Image";
 
 const Dashboard = ({
   getBag,
@@ -50,11 +49,14 @@ const Dashboard = ({
         </Link>
       )}
 
-      {/* <Image /> */}
+      <Link to="imageupload" className="btn btn-success">
+      <i className="far fa-images"></i>Upload Image
+
+      </Link>
 
       
 
-        <br/><br/>
+        <br/><br/><br/><br/>
       <button onClick={() => deleteAccount()} className='btn btn-danger'>
         <i className='fas fa-user-minus'></i> Delete My Account
       </button>

@@ -19,7 +19,7 @@ const ImageUpload = ({ uploadImage }) => {
   };
 
   return (
-    <div class="img-upload">
+    <div className="img-upload">
       <form onSubmit={handleFileSubmit}>
         <input type='file' onChange={handleFileUpload} id='customFile' />
         <input type='submit' value='Upload' className='btn btn-primary' />

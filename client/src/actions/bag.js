@@ -152,6 +152,7 @@ export const clearSetDiscToEdit = () => async (dispatch) => {
 
 // Upload image
 export const uploadImage = (formData) => async (dispatch) => {
+  console.log(formData)
   try {
     const res = await axios.post(`/api/image`, formData);
 

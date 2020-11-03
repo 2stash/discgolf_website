@@ -6,7 +6,6 @@ import Spinner from "../layout/Spinner";
 import { getBagById } from "../../actions/bag";
 import ProfileTable from "./ProfileTable";
 import ProfileImage from "./ProfileImage";
-import Image from "../image/Image";
 
 const Profile = ({ getBagById, match, bag: { bag, loading }, auth }) => {
   useEffect(() => {
@@ -19,7 +18,7 @@ const Profile = ({ getBagById, match, bag: { bag, loading }, auth }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <div class='public-profile'>
+          <div className='public-profile'>
             <ProfileImage profile={bag} />
             
             <div>
@@ -35,9 +34,6 @@ const Profile = ({ getBagById, match, bag: { bag, loading }, auth }) => {
             auth.user._id === bag.user._id && (
               <Link to='/discbag'>Edit Bag</Link>
             )}
-            {auth.isAuthenticated &&
-              auth.loading === false &&
-              auth.user._id === bag.user._id && <Image />}
             </div>
         </Fragment>
       )}

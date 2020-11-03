@@ -50,8 +50,8 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
   );
   return (
     <nav className='navbar bg-dark'>
-      <h1>
-        <Link to='/'>
+      <h1 className="hide-sm">
+        <Link to='/' >
           <i className='fas fa-compact-disc'></i> Build Your Bag
         </Link>
       </h1>
