@@ -10,4 +10,4 @@ This was built with the MERN stack.
 * React for the front end
 * Images are stored using AWS S3 buckets
 
-![] (discgolf.gif)
+![](discgolf.gif)
