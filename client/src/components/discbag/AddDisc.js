@@ -69,19 +69,12 @@ const AddDisc = ({ addDisc }) => {
             />
           </div>
           <div className='form-group'>
-            {/* <input
-              type='text'
-              placeholder='Type'
-              name='disctype'
-              value={disctype}
-              onChange={(e) => onChange(e)}
-            /> */}
             <select
               name='disctype'
               value={disctype}
               onChange={(e) => onChange(e)}
             >
-            <option></option>
+            <option>Type</option>
               <option value='Distance Driver'>Distance Driver</option>
               <option value='Fairway Driver'>Fairway Driver</option>
               <option value='Midrange'>Midrange</option>

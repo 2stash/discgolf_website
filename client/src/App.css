@@ -282,11 +282,6 @@ img {
   margin: 5px;
 }
 
-/* Image upload page ------------------------ */
-/* .image-upload-container {
-  width: 375px;
-} */
-
 /* Public Profile Page ---------------------------------------------*/
 .public-profile,
 .discbag-container,
@@ -442,6 +437,31 @@ button {
   justify-content: center;
   text-align: center;
 }
+
+/* Landing guide */
+.landing-guide {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-guide-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.guide-card {
+  height: 300px;
+  width:300px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
 
 /* Tablet and smaller monitors */
 

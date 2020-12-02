@@ -9,3 +9,5 @@ This was built with the MERN stack.
 * node.js and express for the backend
 * React for the front end
 * Images are stored using AWS S3 buckets
+
+![] (discgolf.gif)

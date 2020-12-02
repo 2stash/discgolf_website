@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types'
@@ -10,6 +10,7 @@ const Landing = ({ isAuthenticated }) => {
   }
 
   return (
+    <Fragment>
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
@@ -25,7 +26,7 @@ const Landing = ({ isAuthenticated }) => {
           <br/>
           <div className="">
 
-          <p className="lead">What to explore different bag setups without logging in?</p>
+          <p className="lead">Explore different bag setups!</p>
 
           <Link to="/bags" className="btn btn-danger">Browse Bags </Link>
 
@@ -33,6 +34,16 @@ const Landing = ({ isAuthenticated }) => {
         </div>
       </div>
     </section>
+
+    {/* <section className="landing-guide">
+      <h2>How does it work?</h2>
+      <div className="landing-guide-layout">
+        <div className="guide-card"></div>
+        <div className="guide-card"></div>
+        <div className="guide-card"></div>
+      </div>
+    </section> */}
+    </Fragment>
   )
 }
 
